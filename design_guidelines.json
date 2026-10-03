@@ -1,0 +1,178 @@
+{
+  "project_name": "AegisAI - Generative Chat & Code Telemetry Governance Platform",
+  "app_type": "dashboard / saas_app (analytics governance dashboard)",
+  "context_strategy": "DASHBOARDS & ADMIN PANELS + ENTERPRISE TELEMETRY",
+  "persona_and_tone": {
+    "designer_persona": "E1 Creative Telemetry Architect",
+    "theme_archetype": "Swiss High-Contrast + Tactical Engineering (Deep Slate & Obsidian with Signal Indigo and Ember alerts)",
+    "emotional_tone": "Authoritative, mathematically precise, vigilant, transparent, and non-punitive. It champions productivity and skill growth while equipping compliance teams with deep forensic guardrails."
+  },
+  "theme_mode": {
+    "default": "dark",
+    "support_light_toggle": true,
+    "theme_reason": "High-density developer and compliance command centers thrive in low-eye-fatigue dark modes with high APCA contrast ratios. Light mode provided for executive briefing."
+  },
+  "typography": {
+    "headline_font": "Outfit, Manrope, -apple-system, sans-serif",
+    "body_font": "IBM Plex Sans, -apple-system, BlinkMacSystemFont, sans-serif",
+    "telemetry_mono_font": "JetBrains Mono, Menlo, Courier New, monospace",
+    "rules": {
+      "banned_for_headings": ["Inter", "Roboto", "Open Sans", "Lato"],
+      "h1_scale": "text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight",
+      "h2_scale": "text-xl sm:text-2xl lg:text-3xl font-medium tracking-tight",
+      "h3_scale": "text-lg sm:text-xl font-medium",
+      "h4_scale": "text-base sm:text-lg font-medium",
+      "body": "text-sm sm:text-base leading-relaxed text-slate-300 dark:text-slate-300",
+      "caption_mono": "font-mono text-xs uppercase tracking-wider text-slate-400"
+    }
+  },
+  "color_palette": {
+    "dark": {
+      "background": "#090D16",
+      "surface_card": "#0F172A",
+      "surface_muted": "#1E293B",
+      "border": "#243248",
+      "border_highlight": "#38BDF8",
+      "primary": "#3B82F6",
+      "primary_hover": "#2563EB",
+      "accent_cyan": "#06B6D4",
+      "accent_emerald": "#10B981",
+      "accent_amber": "#F59E0B",
+      "accent_rose": "#F43F5E",
+      "text_primary": "#F8FAFC",
+      "text_secondary": "#94A3B8",
+      "text_muted": "#64748B"
+    },
+    "light": {
+      "background": "#F8FAFC",
+      "surface_card": "#FFFFFF",
+      "surface_muted": "#F1F5F9",
+      "border": "#E2E8F0",
+      "border_highlight": "#2563EB",
+      "primary": "#1D4ED8",
+      "primary_hover": "#1E40AF",
+      "text_primary": "#0F172A",
+      "text_secondary": "#475569"
+    },
+    "forbidden_colors": ["#1B93A4 (dashboard teal banned)", "#7351B7 (banned AI purple)"]
+  },
+  "surface_strategy": {
+    "container_treatment": "Tactical Minimalism. Deep Obsidian cards (#0F172A) with 1px border (#243248) and 0px to 4px subtle rounded corners (rounded-lg).",
+    "header_nav": "Semi-solid high-blur crystal bar (bg-slate-950/85 backdrop-blur-xl border-b border-slate-800/80). NEVER fully transparent.",
+    "dropdowns_and_popovers": "Opaque high-contrast bg-slate-900 border border-slate-700 shadow-2xl. Never transparent.",
+    "hover_lift": "hover:border-slate-600 transition-colors duration-150"
+  },
+  "layout_and_bento_grid": {
+    "spacing_scale": "Generous interior padding: p-5 sm:p-6 inside cards. Outer gaps: gap-4 sm:gap-6.",
+    "corporate_mode_b_grid": "4-column high density telemetry matrix. Top KPI summary row (4 metric blocks: Total AI Spend, Active Engineers, % AI-Generated Code, Safety/PII Incident Rate). Primary telemetry canvas (col-span-12 lg:col-span-8), Lateral compliance anomaly stack (col-span-12 lg:col-span-4).",
+    "personal_mode_grid": "Skill Mode breakdown (Skills, Plan, Ask, Agent mode usage dial), Category Distribution (Learning vs Engineering vs Writing vs Debugging), Model Spend Burn (Codex, GPT-4o, Claude 3.5, CLI), and Efficiency Gain Velocity.",
+    "mobile_rule": "Mobile-first: always collapses to grid-cols-1, images capped under 80vh."
+  },
+  "image_urls": [
+    {
+      "category": "compliance_security_hero",
+      "url": "https://images.unsplash.com/photo-1590065707046-4fde65275b2e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHwzfHxjb21wbGlhbmNlJTIwb2ZmaWNlciUyMGxhcHRvcCUyMHNlY3VyaXR5fGVufDB8fHx8MTc5MDc1OTU4NXww&ixlib=rb-4.1.0&q=85",
+      "description": "Compliance governance officer analyzing automated telemetry feeds on laptop",
+      "placement": "Login / Landing modal & Governance audit certificate header"
+    },
+    {
+      "category": "telemetry_analytics_screen",
+      "url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzZ8MHwxfHNlYXJjaHwxfHxleGVjdXRpdmUlMjBlbmdpbmVlciUyMGRhc2hib2FyZCUyMGFuYWx5dGljc3xlbnwwfHx8fDE3OTA3NTk1NDR8MA&ixlib=rb-4.1.0&q=85",
+      "description": "High-density performance telemetry graphs on dark screen",
+      "placement": "Live API Streaming Telemetry Banner / Empty State illustration background"
+    }
+  ],
+  "navigation_and_roles": {
+    "roles": [
+      {
+        "id": "employee",
+        "name": "Employee View",
+        "badge": "Personal Telemetry",
+        "tabs": ["My AI Dashboard", "Skill & Mode Telemetry", "Import Usage (CSV/JSON)", "Prompt & Code Efficiency"]
+      },
+      {
+        "id": "compliance",
+        "name": "Compliance & Exec Admin",
+        "badge": "Org Governance & Audit",
+        "tabs": ["Corporate AI Governance", "Team & Category Drilldown", "AI Code % & Efficiency", "Anomaly & Spend Alerts", "Live Connectors (Codex/ChatGPT/CLI)"]
+      }
+    ],
+    "header_elements": [
+      "Brand Logo with active pulse status indicator (AegisAI Governance)",
+      "Role switcher quick-toggle (Employee vs Compliance Admin)",
+      "Live Data Stream badge (Simulated WebSocket / Live API ingestion indicator)",
+      "Date Range Selector (Today, 7D, 30D, Quarter, Custom)",
+      "Notification bell with spend spike and unreviewed code warnings",
+      "User profile avatar with role pill"
+    ]
+  },
+  "key_components_to_build": {
+    "1_header_nav": {
+      "component_path": "src/components/navigation/Navbar.js",
+      "features": "Crystal blurred top bar, role toggle, live pulse indicator, user selector"
+    },
+    "2_auth_modal": {
+      "component_path": "src/components/auth/AuthModal.js",
+      "features": "Email/password authentication with quick demo credentials: employee@corp.internal and compliance@corp.internal"
+    },
+    "3_personal_dashboard": {
+      "component_path": "src/components/personal/PersonalDashboard.js",
+      "features": "Spend trends by app (ChatGPT, Codex, CLI), Mode usage tracking (Skills, Plan, Ask, Agent), Category donut (Learning 34%, Engineering 46%, Writing 12%, Other 8%), Code efficiency metric (% lines accepted vs regenerated)"
+    },
+    "4_corporate_governance_dashboard": {
+      "component_path": "src/components/corporate/CorporateGovernanceDashboard.js",
+      "features": "Org-wide spend heatmaps, % AI-generated code across repos, Department breakdown (Frontend, Backend, DevOps, Data Science, Product, Legal), Efficiency index vs monthly budget"
+    },
+    "5_compliance_category_insights": {
+      "component_path": "src/components/compliance/ComplianceCategoryInsights.js",
+      "features": "Sensitive category audits, PII scrubbing checks, License compliance (GPL vs permissive code detection), Shadow AI alerts, Anomaly detection feeds with simulated LLM natural language explainers"
+    },
+    "6_data_importer": {
+      "component_path": "src/components/ingestion/UsageImporter.js",
+      "features": "Drag-and-drop CSV / JSON file parser for OpenAI usage export, Anthropic telemetry, or custom CLI logs. Pre-loaded sample presets (e.g., 'Load High Spend CLI Spike', 'Load Standard Dev Sprint', 'Load Shadow AI Incident')"
+    },
+    "7_live_connector_status": {
+      "component_path": "src/components/connectors/ApiConnectorsModal.js",
+      "features": "Org-level live API keys & webhook telemetry toggles for Codex, ChatGPT Team, GitHub Copilot, and Internal Terminal CLI agent"
+    }
+  },
+  "data_models_and_metrics": {
+    "modes_tracked": [
+      {"id": "plan", "name": "Plan Mode", "description": "Architecture planning, prompt planning, and step-by-step reasoning", "color": "#3B82F6"},
+      {"id": "ask", "name": "Ask Mode", "description": "Quick Q&A, documentation lookups, bug explanation", "color": "#10B981"},
+      {"id": "agent", "name": "Agent Mode", "description": "Autonomous file editing, bash execution, and multi-file refactoring", "color": "#F59E0B"},
+      {"id": "skills", "name": "Skills Mode", "description": "Custom workflows, skill invocation, tool calling", "color": "#8B5CF6"}
+    ],
+    "categories_tracked": [
+      {"name": "Engineering & Architecture", "benchmark_efficiency": "88%", "code_share": "54%"},
+      {"name": "Learning & Upskilling", "benchmark_efficiency": "95%", "code_share": "18%"},
+      {"name": "Documentation & Technical Writing", "benchmark_efficiency": "91%", "code_share": "14%"},
+      {"name": "Debugging & Incident Resolution", "benchmark_efficiency": "84%", "code_share": "10%"},
+      {"name": "Data Analytics & Scripts", "benchmark_efficiency": "89%", "code_share": "4%"}
+    ],
+    "telemetry_metrics": [
+      "Total Token Consumption (Input vs Output)",
+      "Estimated Cost ($USD) with Budget Variance Alerts",
+      "AI Code Ingestion Ratio (% lines committed authored by LLM vs Human)",
+      "Prompt Efficiency Score (Iterations to resolution)",
+      "Compliance Guardrail Pass Rate (0-100%)"
+    ]
+  },
+  "instructions_to_main_agent": [
+    "1. Project has React 19 + Tailwind v4 + Recharts + Lucide Icons + Radix UI + Sonner. Work with .js / .jsx files (not .tsx).",
+    "2. Implement both Personal View and Corporate Compliance View with a visible role-switcher or tabbed control at top.",
+    "3. Provide realistic preset data out-of-the-box (no blank states on initial load) plus a CSV/JSON file uploader that updates the dashboard charts dynamically.",
+    "4. Ensure natural-language AI insights are rich and contextual (e.g. 'Engineering Agent usage grew by 42% after Codex CLI v2.4 rollout, saving an estimated 16.4 developer hours this week').",
+    "5. Every key card, button, tab, and KPI metric MUST have a clear data-testid attribute formatted in kebab-case (e.g., data-testid='tab-personal-view', data-testid='kpi-spend-total', data-testid='upload-csv-input').",
+    "6. Never leave dropdown or nav backgrounds completely transparent; use solid or frosted backdrop-blur with opaque borders.",
+    "7. Include sound feedback and Sonner toasts on actions like importing usage, exporting compliance reports, or adjusting budget threshold alerts."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "Never use generic centered layouts or unstyled default table borders.",
+    "Avoid Inter for main headings; use Outfit or Manrope style sans fonts with tight tracking.",
+    "Ensure high contrast in both dark and light modes. Dark mode must tint neutrals with subtle slate (#0F172A / #1E293B).",
+    "Do not use forbidden colors: #1B93A4 or #7351B7.",
+    "Use Recharts with responsive containers and custom styled tooltips with solid backgrounds.",
+    "Make all tabs, filters (7d, 30d, 90d), and role switchers fully reactive."
+  ]
+}
